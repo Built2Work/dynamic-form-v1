@@ -31,7 +31,7 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --text-primary: #f0ede8;
-      --text-secondary: #b0ad a5;
+      --text-secondary: #b0ada5;
       --text-tertiary: #706d65;
       --border: #3a3835;
       --border-light: #2e2c29;
@@ -867,7 +867,7 @@ function restart() {
 }
 
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxztfrKxrpRzjzprPaImYRY9CmPT-ZZfZBD93gSSu8p-lbO9QEk8TaurlyH5vjX5MPhUg/exec';
+const SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
 
 function initQR() {
   const div = document.getElementById('qr-canvas');
@@ -971,6 +971,7 @@ function submitForm() {
 }
 
 
+function render() {
   const fid = document.activeElement && document.activeElement.id;
   const fpos = document.activeElement && document.activeElement.selectionStart;
   const fend = document.activeElement && document.activeElement.selectionEnd;
